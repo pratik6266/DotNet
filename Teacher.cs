@@ -6,4 +6,9 @@ class Teacher
   {
     post = "Associate Professor";
   }
+
+  public string GetPost()
+  {
+    return post;
+  }
 }

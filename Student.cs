@@ -1,21 +1,15 @@
-class Student: Teacher
+class Student(string name, int age) : Teacher()
 {
-  private string? name;
-  private int? age;
+  private readonly string? name = name;
+  private readonly int? age = age;
 
-  public Student(string name, int age) : base()
-  {
-    this.name = name;
-    this.age = age;
-  }
-
-  public string getName()
+  public string GetName()
   {
     return name ?? "Unknown";
   }
 
-  public int getAge()
+  public int GetAge()
   {
     return age ?? 0;
   }
-} 
+}
